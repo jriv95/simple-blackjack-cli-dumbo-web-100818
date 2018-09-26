@@ -33,13 +33,12 @@ end
 
 def hit?(int)
   prompt_user
-  get_user_input
-  if get_user_input == 'h'
-    deal_card
-  elsif get_user_input == 's'
-    display_card_total(total)
-  else invalid_command
-  end
+  choice = get_user_input
+  if choice == "h"
+    int += deal_card
+  elsif choice == "s"
+    return int
+    end 
 end
 
 def invalid_command
