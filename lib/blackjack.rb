@@ -41,7 +41,7 @@ def hit?(total)
   #  display_card_total
   #else prompt_user
   #end
-  print total
+  return total
 end
 
 def invalid_command
