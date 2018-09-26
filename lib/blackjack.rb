@@ -34,6 +34,7 @@ end
 def hit?(total)
   prompt_user
   get_user_input
+  return totsl
   answer = get_user_input
   if answer == 'h'
     deal_card
