@@ -38,7 +38,7 @@ def hit?(int)
     int += deal_card
   elsif answer == "s"
     return int
-    end 
+    end
 end
 
 def invalid_command
@@ -50,5 +50,16 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  hand = hit?(initial_round)
+  until hand > 21
+    display_card_total(hand)
+    hand += hit?(deal_card)
+    end
+    display_card_total(hand)
+    end_game(hand)
 end
+
+
+
+
