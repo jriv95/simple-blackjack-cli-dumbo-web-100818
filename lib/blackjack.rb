@@ -36,7 +36,7 @@ def hit?(int)
   get_user_input
   answer = get_user_input
   if answer == 'h'
-    rand(1..11)
+    deal_card
   elsif answer == 's'
     puts "Your cards add up to #{total}"
   else return total
