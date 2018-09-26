@@ -33,6 +33,7 @@ end
 
 def hit?(total)
   prompt_user
+  get_user_input
   answer = get_user_input
   if answer == 'h'
     rand(1..11)
