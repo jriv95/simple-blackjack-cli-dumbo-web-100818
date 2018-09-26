@@ -38,7 +38,7 @@ def hit?(total)
     rand(1..11)
   elsif answer == 's'
     puts "Your cards add up to #{total}"
-  else hit?(total)
+  else return total
   end
 end
 
