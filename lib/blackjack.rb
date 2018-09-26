@@ -33,10 +33,10 @@ end
 
 def hit?(int)
   prompt_user
-  choice = get_user_input
-  if choice == "h"
+  answer = get_user_input
+  if answer == "h"
     int += deal_card
-  elsif choice == "s"
+  elsif answer == "s"
     return int
     end 
 end
