@@ -39,12 +39,12 @@ def hit?(int)
     deal_card
   elsif answer == 's'
     puts "Your cards add up to #{total}"
-  else return total
+  else invalid_command
   end
 end
 
 def invalid_command
-  # code invalid_command here
+  puts "Please enter a valid command"
 end
 
 #####################################################
