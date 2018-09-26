@@ -34,10 +34,9 @@ end
 def hit?(int)
   prompt_user
   get_user_input
-  answer = get_user_input
-  if answer == 'h'
+  if get_user_input == 'h'
     deal_card
-  elsif answer == 's'
+  elsif get_user_input == 's'
     puts "Your cards add up to #{total}"
   else invalid_command
   end
