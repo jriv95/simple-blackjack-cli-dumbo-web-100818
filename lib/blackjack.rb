@@ -37,7 +37,7 @@ def hit?(int)
   if get_user_input == 'h'
     deal_card
   elsif get_user_input == 's'
-    puts "Your cards add up to #{total}"
+    display_card_total
   else invalid_command
   end
 end
