@@ -39,9 +39,8 @@ def hit?(total)
   #  deal_card
   #elsif answer == 's'
   #  display_card_total
-  #else prompt_user
+  #else hit?(total)
   #end
-  return total
 end
 
 def invalid_command
